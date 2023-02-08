@@ -1,0 +1,63 @@
+<!-- @format -->
+
+<tr id="tag-16" class="level-0">
+  <th scope="row" class="check-column">
+    <label class="screen-reader-text" for="cb-select-16"
+      >Vybrať Category 1</label
+    ><input type="checkbox" name="delete_tags[]" value="16" id="cb-select-16" />
+  </th>
+  <td class="name column-name has-row-actions column-primary" data-colname="ID">
+    <strong>'. $cat->term_id .'</strong>
+  </td>
+  <td
+    class="name column-name has-row-actions column-primary"
+    data-colname="Názov"
+  >
+    <a
+      class="row-title"
+      href="'. get_term_link($cat->slug, 'product_cat') .'"
+      aria-label="“'. $cat->name .'” (Upraviť)"
+      >'. $cat->name .'</a
+    >
+  </td>
+  <td class="description column-description" data-colname="Popis">
+    <p>'. $cat->description .'</p>
+  </td>
+  <td
+    class="name column-name has-row-actions column-primary"
+    data-colname="Slug"
+  >
+    <strong>'. $cat->slug .'</strong>
+  </td>
+</tr>
+
+<tr id="tag-16" class="level-1">
+    <th scope="row" class="check-column">
+      <label class="screen-reader-text" for="cb-select-16"
+        >Vybrať Category 1</label
+      ><input type="checkbox" name="delete_tags[]" value="16" id="cb-select-16" />
+    </th>
+    <td class="name column-name has-row-actions column-primary" data-colname="ID">
+      <strong>'. $sub_category->term_id .'</strong>
+    </td>
+    <td
+      class="name column-name has-row-actions column-primary"
+      data-colname="Názov"
+    >
+      <a
+        class="row-title"
+        href="'. get_term_link($sub_category->slug, 'product_cat') .'"
+        aria-label="“'. $sub_category->name .'” (Upraviť)"
+        >'. $sub_category->name .'</a
+      >
+    </td>
+    <td class="description column-description" data-colname="Popis">
+      <p>'. $sub_category->description .'</p>
+    </td>
+    <td
+      class="name column-name has-row-actions column-primary"
+      data-colname="Slug"
+    >
+      <strong>'. $sub_category->slug .'</strong>
+    </td>
+  </tr>
