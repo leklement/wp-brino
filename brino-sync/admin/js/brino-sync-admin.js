@@ -1,7 +1,9 @@
-(function( $ ) {
-	'use strict';
+/** @format */
 
-	/**
+(function ($) {
+  "use strict";
+
+  /**
 	 * All of the code for your admin-facing JavaScript source
 	 * should reside in this file.
 	 *
@@ -29,12 +31,15 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 
-	$(function() {
-		$('#brino-sync-form__form').submit( function(event) {
-			event.preventDefault();
-			alert("Submitted");
-		}); 
-	});
-	
-
-})( jQuery );
+  $(function () {
+    // $("#brino-sync-form__form").submit(function (event) {
+    //   event.preventDefault();
+    //   var $inputs = $("#brino-sync-form__form :input");
+    //   var values = {};
+    //   $inputs.each(function () {
+    //     values[this.name] = $(this).val();
+    //   });
+    //   alert("Submitted: ", values);
+    // });
+  });
+})(jQuery);
