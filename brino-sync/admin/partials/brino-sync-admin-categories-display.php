@@ -57,6 +57,7 @@
             'name' => $product_category->name,
             'description' => $product_category->description,
             'slug' => $product_category->slug,
+            'parentId' => $product_category->parent
           ),
         ),
       );
